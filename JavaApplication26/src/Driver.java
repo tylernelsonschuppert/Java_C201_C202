@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author tylernelson
+ */
+import java.util.Scanner;
+public class Driver {
+	public static void main(String[] args)
+	{
+		Scanner driverIn;
+		driverIn = new Scanner(System.in);
+		AgentEvaluator agentEvaluator;
+		do {
+			agentEvaluator = new AgentEvaluator();
+			agentEvaluator.displayScores();	
+			System.out.print("Continue? (y/n): ");
+		} while (driverIn.next().charAt(0) != 'n');
+	}
+}
